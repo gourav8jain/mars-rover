@@ -4,6 +4,7 @@ using MarsRoverApp.Common.Infrastructure.Common.ViewModels;
 using MarsRoverApp.WebApi.Implementation.Filters;
 using MarsRoverApp.WebApi.Implementation.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace MarsRoverApp.WebApi.Controllers
 {
