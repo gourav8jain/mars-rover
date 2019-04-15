@@ -1,4 +1,5 @@
-﻿using MarsRoverApp.Common.Infrastructure.Common.Interfaces;
+﻿using System.Net;
+using MarsRoverApp.Common.Infrastructure.Common.Interfaces;
 using MarsRoverApp.Common.Infrastructure.Common.Models;
 using MarsRoverApp.Common.Infrastructure.Common.ViewModels;
 using MarsRoverApp.WebApi.Implementation.Filters;
@@ -43,7 +44,7 @@ namespace MarsRoverApp.WebApi.Controllers
                 _roverCaching.SetItem(model.Id, roverViewModel);
             }
 
-            return NoContent();
+            return CreatedAtAction(nameof(Create), new { id = model.Id }, model);
         }
 
         // POST api/values

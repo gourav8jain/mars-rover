@@ -4,7 +4,7 @@ using Microsoft.Extensions.Caching.Memory;
 
 namespace MarsRoverApp.WebApi.Implementation.Caching
 {
-    class RoverCaching : IRoverCaching
+    public class RoverCaching : IRoverCaching
     {
         private readonly IMemoryCache _memoryCache;
 
